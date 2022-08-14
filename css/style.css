@@ -24,12 +24,14 @@ body {
   align-items: center;
   height: 100px;
   width: 100%;
+  
 }
 @media screen and (max-width: 767px) {
   .header {
     height: 70px;
     position: fixed;
     z-index: 3;
+       
   }
 }
 
@@ -48,6 +50,7 @@ body {
   position: fixed;
   width: 100%;
   z-index: 4;
+  background-color: white
 }
 @media screen and (max-width: 767px) {
   .gNav {
@@ -62,6 +65,7 @@ body {
     -ms-flex-pack: center;
     justify-content: center;
     padding-top: 70px;
+       background-color: white
   }
   .gNav.active {
     display: block;
@@ -107,6 +111,7 @@ body {
   position: fixed;
   width: 40%;
   z-index: 6;
+    background-color: white
 }
 @media screen and (max-width: 767px) {
   .gNav_Language {
@@ -122,6 +127,7 @@ body {
     -ms-flex-pack: center;
     justify-content: center;
     padding-top: 70px;
+       background-color: white
   }
   .gNav_Language.active_Language {
     display: block;
@@ -346,7 +352,7 @@ body {
 .mainVisual__ttl--ja_img{
     object-fit: cover;
     height: atuo;
-    width: atuo;
+    width: 100%;
 }
 @media screen and (max-width: 767px) {
   .mainVisual__ttl--ja_img {
@@ -1026,7 +1032,6 @@ body {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  
   width: 100vw;
 }
 @media screen and (max-width: 767px) {
@@ -1248,79 +1253,3 @@ body {
     font-size: 1.6rem;
   }
 }
-/* Button */
-
-	input[type="button"],
-	input[type="submit"],
-	input[type="reset"],
-	button,
-	.button {
-		cursor: pointer;
-		background-color: #c94663;
-		background-image: url("images/bg01.png");
-		border-radius: 0.4em;
-		text-align: center;
-		box-shadow: inset 0px 0px 0px 1px rgba(255, 255, 255, 0.15);
-		color: #fff;
-		font-family: 'Open Sans Condensed', sans-serif;
-		font-weight: 700;
-		text-decoration: none;
-		-moz-transition: background-color .25s ease-in-out, color .25s ease-in-out;
-		-webkit-transition: background-color .25s ease-in-out, color .25s ease-in-out;
-		-ms-transition: background-color .25s ease-in-out, color .25s ease-in-out;
-		transition: background-color .25s ease-in-out, color .25s ease-in-out;
-		text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.5);
-	}
-
-		input[type="button"]:disabled, input[type="button"].disabled,
-		input[type="submit"]:disabled,
-		input[type="submit"].disabled,
-		input[type="reset"]:disabled,
-		input[type="reset"].disabled,
-		button:disabled,
-		button.disabled,
-		.button:disabled,
-		.button.disabled {
-			opacity: 0.35;
-			cursor: default;
-		}
-
-		input[type="button"]:hover,
-		input[type="submit"]:hover,
-		input[type="reset"]:hover,
-		button:hover,
-		.button:hover {
-			background-color: #d95673;
-		}
-
-		input[type="button"]:active,
-		input[type="submit"]:active,
-		input[type="reset"]:active,
-		button:active,
-		.button:active {
-			background-color: #b93653;
-		}
-
-		input[type="button"].alt,
-		input[type="submit"].alt,
-		input[type="reset"].alt,
-		button.alt,
-		.button.alt {
-			background-color: #364050;
-		}
-
-			input[type="button"].alt:hover,
-			input[type="submit"].alt:hover,
-			input[type="reset"].alt:hover,
-			button.alt:hover,
-			.button.alt:hover {
-				background-color: #465060;
-			}
-
-			input[type="button"].alt:active,
-			input[type="submit"].alt:active,
-			input[type="reset"].alt:active,
-			button.alt:active,
-			.button.alt:active {
-				background-color: #263040;
-			}
